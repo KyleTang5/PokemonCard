@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eevee Pokemon</title>
+</head>
+<style>
+    .card {
+  position: absolute;
+  left: 50px;
+  width: 750px;
+  height: 1050px;
+  background-color: #F2EFED;
+  border: 20px solid #FFE164;
+  border-radius: 45px;
+}
+    .basic {
+        position: relative;
+        width: 80px;
+        height: 30px;
+        background-color: rgb(219, 212, 212);
+        border: 2px solid rgba(70, 69, 69, 0.785);
+        border-radius: 15px;
+        left: -10px;
+        top: 10px;
+    }
+    basictext {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        color: #424141;
+        font-size: 20px;
+        left: 8px;
+        top: 3px;
+        font-weight: bold;
+    }
+    eevee {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        color: #424141;
+        font-size: 35px;
+        left: 80px;
+        top: -40px;
+        font-weight: bold; 
+    }
+    hp {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        color: #424141;
+        font-size: 20px;
+        left: 500px;
+        top: -40px;
+        font-weight: bold; 
+    }
+    hpnum {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        color: #424141;
+        font-size: 35px;
+        left: 500px;
+        top: -40px;
+        font-weight: bold; 
+    }
+    colorless1 {
+        left: 510px;
+        top: -25px;
+        position: relative;
+    }
+    eeveeimg {
+        position: absolute;
+        left: 25px;
+        top: 50px;
+    }
+    .statsbox{
+        position: relative;
+        height: 25px;
+        width: 700px;
+        background-color: #D2D1D2;
+        border: 5px solid silver;
+        top: 410px;
+        left: 19px;
+        border-radius: 10px;
+    }
+    stats {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        color: #424141;
+        font-size: 15px;
+        font-weight: bold;
+        left: 165px;
+        top: 5px; 
+    }
+    .colorless2 {
+    position: relative;
+    top: 700px;
+    left: 50px;
+    float: left;
+    }
+    move2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        color: #424141;
+        font-size: 30px;
+        font-weight: bold;
+        top: 700px;
+        left: 150px;
+    }
+    dmg {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        color: #424141;
+        font-size: 30px;
+        font-weight: bold;
+        top: 700px;
+        left: 450px;
+    }
+    .colorless3 {
+    position: relative;
+    top: 450px;
+    left: -40px;
+    }
+    move1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        color: #424141;
+        font-size: 30px;
+        font-weight: bold;
+        top: 410px;
+        left: 220px;
+    }
+    movedesc {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        color: #424141;
+        font-size: 25px;
+        top: 675px;
+        left: 10px;
+    }
+    .weaknessbox {
+        position: relative;
+        height: 25px;
+        width: 500px;
+        background-color: #D2D1D2;
+        border: 5px solid silver;
+        top: 700px;
+        left: -10px;
+        border-radius: 10px;
+    }
+    weakness {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        color: #424141;
+        font-size: 15px;
+        left: 10px;
+        top: -8px;
+    }
+    fighting {
+        left: 50px;
+        position: relative;
+    }
+    weakness2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        color: #424141;
+        font-size: 15px;
+        left: 50px;
+        top: -8px;
+    }
+    resistance {
+        position: relative;
+        left: 200px;
+        top: -8px
+    }
+    .retreatbox {
+        position: relative;
+        height: 25px;
+        width: 200px;
+        background-color: #D2D1D2;
+        border: 5px solid silver;
+        top: 667px;
+        left: 550px;
+        border-radius: 10px;
+    }
+    retreat {
+        position: relative;
+        left: 10px;
+        top: -8px
+    }
+    colorlessagain {
+        left: 20px;
+        position: relative;
+    }
+</style>
+<body>
+    <div class="card">
+        <div class="basic">
+            <basictext>BASIC</basictext></div>
+        <eevee>Eevee</eevee>
+        <hp>HP</hp>
+        <hpnum>50</hpnum>
+        <colorless1><img src="colorless.png" height="45" width="45"></colorless1>
+        <eeveeimg><img src="Eevee.png" height="450px" width="700px"></eeveeimg>
+        <div class="statsbox"><stats>NO 133 Evolution Pokemon HT: 1'00" WT 14.3 lbs </stats></div>
+        <div class="colorless2">
+            <img src="colorless.png" height="40" width="40">
+            <img src="colorless.png" height="40" width="40">
+        </div>
+        <move2> Smash Kick</move2>
+        <dmg>20</dmg>
+        <div class="colorless3">
+            <img src="colorless.png" height="40" width="40">
+        </div>
+        <move1>Find a Friend</move1>
+        <movedesc>Flip a coin. If heads, search your deck for a Pokémon, reveal it, and put it into your hand. Then, shuffle your deck.</movedesc>
+        <div class="weaknessbox">
+            <weakness>weakness</weakness>
+            <fighting><img src="fighting.png" height="25" width="25"></fighting>
+            <weakness2>x2</weakness2>
+            <resistance>resistance</resistance>
+        </div>
+        <div class="retreatbox">
+            <retreat>retreat</retreat>
+            <colorlessagain><img src="colorless.png" height="25" width="25"></colorlessagain>
+        </div>
+    </div>
+</body>
+</html>
